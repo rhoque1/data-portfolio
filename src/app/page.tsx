@@ -36,7 +36,7 @@ export default function Home() {
           Radwan Hoque
         </p>
         <h1 className="text-6xl font-extrabold tracking-tight mb-8 leading-tight mx-auto" style={{ color: 'var(--text)', maxWidth: 900 }}>
-          Data Analyst & <span style={{ color: 'var(--accent)' }}>Engineer</span>
+          Data Analytics & <span style={{ color: 'var(--accent)' }}>Engineering</span>
         </h1>
         <p className="text-lg leading-relaxed mx-auto mb-10" style={{ color: 'var(--text-muted)', maxWidth: 600 }}>
           IT & Informatics student at Rutgers University. I build dashboards, write data pipelines, and find the story in the numbers.
