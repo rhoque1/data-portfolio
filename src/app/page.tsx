@@ -30,16 +30,34 @@ export default function Home() {
   return (
     <main className="min-h-screen" style={{ background: 'var(--bg)' }}>
 
-        <header className="px-10 pt-40 pb-24 text-center">
+        {/* Hero */}
+      <header className="px-10 pt-40 pb-24 text-center">
         <p className="mb-6 font-medium" style={{ color: 'var(--accent)', fontSize: 13, letterSpacing: '0.15em', textTransform: 'uppercase' }}>
-          Data analyst & storyteller
+          Radwan Hoque
         </p>
-        <h1 className="text-7xl font-extrabold tracking-tight mb-8 leading-tight mx-auto" style={{ color: 'var(--text)', maxWidth: 900 }}>
-          Turning complex data into <span style={{ color: 'var(--accent)' }}>clarity</span>
+        <h1 className="text-6xl font-extrabold tracking-tight mb-8 leading-tight mx-auto" style={{ color: 'var(--text)', maxWidth: 900 }}>
+          Data Analyst & <span style={{ color: 'var(--accent)' }}>Engineer</span>
         </h1>
-        <p className="text-xl leading-relaxed mx-auto" style={{ color: 'var(--text-muted)', maxWidth: 580 }}>
-          I build interactive dashboards and predictive models that help businesses make smarter decisions. Here's a look at my recent work.
+        <p className="text-lg leading-relaxed mx-auto mb-10" style={{ color: 'var(--text-muted)', maxWidth: 600 }}>
+          IT & Informatics student at Rutgers University. I build dashboards, write data pipelines, and find the story in the numbers.
         </p>
+
+        {/* Skills */}
+        <div className="flex flex-wrap justify-center gap-3">
+          {['Python', 'SQL', 'Tableau', 'Power BI', 'Excel', 'ETL/ELT'].map((skill) => (
+            <span
+              key={skill}
+              className="px-4 py-1.5 rounded-full text-sm font-medium"
+              style={{
+                background: 'rgba(200,149,108,0.08)',
+                color: 'rgba(200,149,108,0.7)',
+                border: '1px solid rgba(200,149,108,0.1)',
+              }}
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
       </header>
 
       {/* Divider */}
