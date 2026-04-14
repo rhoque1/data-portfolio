@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg: #0C0C0B;
+  --text: #F5F0E8;
+  --text-muted: rgba(245, 240, 232, 0.45);
+  --text-faint: rgba(245, 240, 232, 0.25);
+  --accent: #C8956C;
+  --accent-muted: rgba(200, 149, 108, 0.4);
+  --border: rgba(255, 255, 255, 0.06);
+  --card-bg: rgba(255, 255, 255, 0.02);
+  --card-bg-hover: rgba(255, 255, 255, 0.04);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  letter-spacing: -0.02em;
+}

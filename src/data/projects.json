@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Customer Churn Prediction",
+    "description": "A machine learning model predicting telecom customer churn using logistic regression and random forests.",
+    "tools": ["Python", "Pandas", "Scikit-Learn"],
+    "githubLink": "https://github.com/yourusername/churn",
+    "liveLink": "",
+    "image": "/api/placeholder/600/400"
+  },
+  {
+    "id": 2,
+    "title": "Sales Performance Dashboard",
+    "description": "An interactive Tableau dashboard analyzing Q3 regional sales data to identify underperforming sectors.",
+    "tools": ["SQL", "Tableau", "Excel"],
+    "githubLink": "",
+    "liveLink": "https://tableau.com/your-dashboard",
+    "image": "/api/placeholder/600/400"
+  }
+]
