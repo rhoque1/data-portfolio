@@ -58,6 +58,13 @@ export default function Home() {
             </span>
           ))}
         </div>
+        {/* Scroll indicator */}
+        <div className="mt-16 animate-bounce">
+          <p className="text-xs mb-2" style={{ color: 'var(--text-faint)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+            Scroll for work
+          </p>
+          <span style={{ color: 'var(--text-faint)', fontSize: 20 }}>&#8595;</span>
+        </div>
       </header>
 
       {/* Divider */}

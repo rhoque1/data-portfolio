@@ -1,5 +1,5 @@
 ---
-title: "Disney Movie Box Office Analysis"
+title: "Disney Movie Financial Analysis"
 description: "A comprehensive 2x2 dashboard analyzing Disney's cinematic financial history, exploring genre performance, inflation-adjusted trends, and rating distributions."
 tools: ["Tableau", "Excel", "Data Visualization"]
 githubLink: ""
