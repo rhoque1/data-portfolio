@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import ProjectCard from '../components/ProjectCard';
+import ProjectsGrid from '../components/ProjectsGrid';
 
 export default function Home() {
   const projectsDirectory = path.join(process.cwd(), 'src/content/projects');
@@ -73,20 +73,7 @@ export default function Home() {
       </div>
 
       {/* Projects */}
-      <section className="px-10 py-20 pb-32">
-        <div className="flex items-baseline justify-between mb-12">
-          <h2 className="text-2xl" style={{ color: 'var(--text)' }}>Selected work</h2>
-          <span className="text-sm" style={{ color: 'var(--text-faint)' }}>
-            {allProjectsData.length} {allProjectsData.length === 1 ? 'project' : 'projects'}
-          </span>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-          {allProjectsData.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
-      </section>
+      <ProjectsGrid projects={allProjectsData} />
 
       {/* Footer */}
       <footer className="text-center py-12" style={{ borderTop: '1px solid var(--border)' }}>

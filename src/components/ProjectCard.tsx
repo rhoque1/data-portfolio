@@ -2,14 +2,14 @@ import Link from 'next/link';
 
 export default function ProjectCard({ project }: { project: any }) {
   return (
-    <Link href={`/projects/${project.id}`} className="block group">
-      <div
-        className="rounded-xl overflow-hidden transition-all duration-300 group-hover:-translate-y-1"
-        style={{
-          background: 'var(--card-bg)',
-          border: '1px solid var(--border)',
-        }}
-      >
+    <div
+      className="rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1"
+      style={{
+        background: 'var(--card-bg)',
+        border: '1px solid var(--border)',
+      }}
+    >
+      <Link href={`/projects/${project.id}`} className="block group">
         {/* Image */}
         <div className="w-full h-52 overflow-hidden relative">
           <img
@@ -31,7 +31,7 @@ export default function ProjectCard({ project }: { project: any }) {
         </div>
 
         {/* Content */}
-        <div className="p-6 pb-7">
+        <div className="p-6 pb-4">
           <div className="flex justify-between items-start mb-3">
             <h3 className="text-xl" style={{ color: 'var(--text)' }}>
               {project.title}
@@ -63,7 +63,17 @@ export default function ProjectCard({ project }: { project: any }) {
             ))}
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+
+      {/* GitHub Link — outside the Link to avoid nested <a> tags */}
+      {project.githubLink && (
+        <div className="px-6 pb-5">
+          <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-medium transition-colors" style={{ color: 'var(--text-faint)' }}>
+            ↗ View on GitHub
+          </a>
+        </div>
+      )}
+
+    </div>
   );
 }
