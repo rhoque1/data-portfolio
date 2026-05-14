@@ -70,7 +70,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
         {/* Footer CTA */}
         <div className="text-center py-12" style={{ borderTop: '1px solid var(--border)' }}>
           <p className="text-sm mb-6" style={{ color: 'var(--text-faint)' }}>Interested in this analysis?</p>
-          <a href="mailto:your.email@example.com" className="inline-block px-8 py-4 rounded-lg text-sm font-medium transition-colors"
+          <a href="mailto:ruh2@scarletmail.rutgers.edu" className="inline-block px-8 py-4 rounded-lg text-sm font-medium transition-colors"
             style={{ border: '1px solid var(--accent-muted)', color: 'var(--accent)', letterSpacing: '0.04em' }}>
             Get in touch
           </a>

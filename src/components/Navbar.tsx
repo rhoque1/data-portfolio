@@ -10,14 +10,8 @@ export default function Navbar() {
         </Link>
 
         <div className="flex gap-6 items-center text-sm font-medium">
-          <Link href="/" className="transition-colors" style={{ color: 'var(--text-muted)', letterSpacing: '0.08em', textTransform: 'uppercase', fontSize: 13 }}>
-            Work
-          </Link>
-          <Link href="#about" className="transition-colors" style={{ color: 'var(--text-muted)', letterSpacing: '0.08em', textTransform: 'uppercase', fontSize: 13 }}>
-            About
-          </Link>
           <a 
-            href="mailto:your.email@example.com" 
+            href="mailto:ruh2@scarletmail.rutgers.edu" 
             className="px-4 py-2 rounded-md transition-colors"
             style={{ border: '1px solid var(--accent-muted)', color: 'var(--accent)', fontSize: 13, letterSpacing: '0.06em' }}
           >
