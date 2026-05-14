@@ -7,7 +7,7 @@ export default function Navbar() {
   const [copied, setCopied] = useState(false);
 
   const handleContact = () => {
-    navigator.clipboard.writeText('radwanhoque@gmail.com');
+    navigator.clipboard.writeText('ruh2@scarletmail.rutgers.edu');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="w-full px-10 h-16 flex items-center justify-between">
         
         <Link href="/" className="text-xl tracking-tight" style={{ fontFamily: "'DM Serif Display', Georgia, serif", color: 'var(--text)' }}>
-          Radwan<span style={{ color: 'var(--accent)' }}>.</span>
+          Radwan Hoque<span style={{ color: 'var(--accent)' }}>.</span>
         </Link>
 
         <div className="flex gap-6 items-center text-sm font-medium relative">
@@ -33,7 +33,7 @@ export default function Navbar() {
               className="absolute right-0 top-12 px-4 py-2 rounded-lg text-xs font-medium"
               style={{ background: 'var(--card-bg)', border: '1px solid var(--border)', color: 'var(--text)', whiteSpace: 'nowrap' }}
             >
-              radwanhoque@gmail.com
+              ruh2@scarletmail.rutgers.edu
             </div>
           )}
         </div>
